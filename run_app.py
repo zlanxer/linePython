@@ -670,11 +670,6 @@ def send_static_content(path):
     return send_from_directory('static', path)
 
 
-@app.route("/")
-def hello():
-    return "Hello World!"
-
-
 if __name__ == "__main__":
     arg_parser = ArgumentParser(
         usage='Usage: python ' + __file__ + ' [--port <port>] [--help]'
